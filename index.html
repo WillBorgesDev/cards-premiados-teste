@@ -191,15 +191,15 @@
             var response = null;
 
             redirectCheckout.addEventListener('click', function() {
-                pixQRDialog.style.visibility = 'hidden';
                 pixQRDialog.close();
+                pixQRDialog.style.visibility = 'hidden';
                 var win = window.open(response.data.checkout, '_blank');
                 win.focus();
             });
 
             close.addEventListener('click', function() {
                 pixQRDialog.close();
-                pixQRDialog.style.visibility = 'hidde';
+                pixQRDialog.style.visibility = 'hidden';
             });
 
             closeFavDialog.addEventListener('click', function() {
